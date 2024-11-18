@@ -1,0 +1,108 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Lower Body",
+      "exercises": [
+        "Knee Bends",
+        "Forward Lunge"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Upper Body",
+      "exercises": [
+        "Push-Ups",
+        "Pull-Ups"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "core",
+      "exercises": [
+        "leg raise",
+        "crunchas"
+      ]
+    }
+  ],
+  "programs": [
+    {
+      "name": "Knee Rehab Programme",
+      "exercises": [
+        {
+          "name": "Knee Bends",
+          "sets": 10,
+          "reps": 10,
+          "holdTime": 10,
+          "side": "Left"
+        }
+      ],
+      "days": [
+        "M",
+        "W"
+      ],
+      "frequency": 10,
+      "notes": "Rehab for knee injury",
+      "id": 1
+    },
+    {
+      "name": "test 1",
+      "days": [
+        "T",
+        "Th",
+        "Sa"
+      ],
+      "frequency": "6",
+      "notes": "test",
+      "exercises": [
+        {
+          "id": "95895d0b-6cc8-4f23-9ca1-9f94be8d0f9f",
+          "name": "Knee Bends",
+          "sets": "3",
+          "reps": "2",
+          "holdTime": "12",
+          "side": "Left"
+        },
+        {
+          "id": "fc352713-4f3f-4130-b695-6e6882d20115",
+          "name": "Knee Bends",
+          "sets": "3",
+          "reps": "2",
+          "holdTime": "12",
+          "side": "Right"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "test 2",
+      "days": [
+        "M",
+        "W",
+        "F",
+        "Su"
+      ],
+      "frequency": "2",
+      "notes": "test 2",
+      "exercises": [
+        {
+          "id": "c58ed1d3-d3b9-4bb6-a0d7-c1a3d0288b8f",
+          "name": "Knee Bends",
+          "sets": "2",
+          "reps": "2",
+          "holdTime": "3",
+          "side": "Left"
+        },
+        {
+          "id": "70dc476f-1c68-4122-8ae0-73ef8a141a00",
+          "name": "Knee Bends",
+          "sets": "2",
+          "reps": "2",
+          "holdTime": "3",
+          "side": "Right"
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; 
+  color: #333; 
+}
+
+h1, h3, h4 {
+  color: black; 
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+.exercise-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 20px; 
+}
+
+
+.exercise-card h4 {
+  color: #333;
+  margin: 0; 
+  flex: 1; 
+}
+
+
+.exercise-input-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.exercise-input-group label {
+  margin-right: 10px;  
+}
+
+.exercise-input {
+  width: 60px; 
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+
+.exercise-card .actions {
+  display: flex;
+  gap: 15px; 
+}
+
+.exercise-card .actions button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.exercise-card .actions button.duplicate-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.exercise-card .actions button.delete-button {
+  background-color: #dc3545; 
+  color: #fff;
+}
+
+/* Program Form */
+.program-form {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.program-form label {
+  display: block;
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+.program-form input,
+.program-form textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.program-form .day-buttons button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.program-form .day-buttons button.selected {
+  background-color: #007bff; 
+}
+
+.program-form button.submit {
+  margin-top: 15px;
+  background-color: #28a745; 
+  color: #fff;
+  font-size: 16px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+
+.dropdown-container {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-heading {
+  font-size: 18px;
+  color: rgb(77, 76, 76);
+}
+
+
+.category-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+.category-item {
+  position: relative;
+}
+
+.category-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.category-item:hover .exercise-submenu {
+  display: block;
+}
+
+.exercise-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 10px;
+  width: 200px;
+}
+
+.exercise-submenu .exercise-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.exercise-submenu .exercise-button:hover {
+  background-color: #0056b3;
+}
+
+/* Exercise List */
+.exercise-list {
+  margin-top: 20px;
+}
+
+.exercise-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.exercise-item {
+  margin-bottom: 10px;
+}
+
+.exercise-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+}
+
+.exercise-button:hover {
+  background-color: #0056b3;
+}
+
+
+.selected-day {
+  background-color: #0056b3;
+}
+
+
+  .days-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px; 
+  }
+  
+
+  .form-submit-button{
+    background-color: #007bff;
+    color: wheat;
+  }
+
+  .exercise-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+ 
+  }
+  
+  .hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+  }
+  
+  .exercise-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center; 
+  }
+  .exercise-settings {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+  }
+  
+  .exercise-input-group,
+  .exercise-side-toggle,
+  .exercise-actions {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .exercise-input {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100px; 
+  }
+  
+  .exercise-actions {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  .hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+  }
+  
+  .side-toggle-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .saved-programs-dropdown {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .program-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .program-item {
+    margin-bottom: 10px;
+  }
+  
+  .program-name-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .program-name-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .program-details {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+.flex-container {
+  display: flex;
+  gap: 20px; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+  padding: 20px;
+}
+
+
+.dropdown-container {
+  flex: 1 1 45%; 
+}
+
+.saved-programs {
+  flex: 1 1 45%; 
+}
+
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .dropdown-container, .saved-programs {
+    flex: 1 1 100%;
+  }
+}
+
+  
